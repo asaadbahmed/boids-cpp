@@ -6,7 +6,7 @@ public:
     double x {};
     double y {};
 
-    Vector2(const double x, const double y) {
+    Vector2(const double x = 0.0, const double y = 0.0) {
         this -> x = x;
         this -> y = y;
     }
@@ -30,9 +30,16 @@ public:
 };
 
 class Boid {
-    static int SEPARATION_WEIGHT;
-    static int ALIGNMENT_WEIGHT;
-    static int COHESION_WEIGHT;
+    public:
+        Vector2 position {};
+        Vector2 velocity {};
+        Vector2 acceleration {};
+
+        Boid(const Vector2 position, const Vector2 velocity, const Vector2 acceleration) {
+            this -> position = position;
+            this -> velocity = velocity;
+            this -> acceleration = acceleration;
+        }
 };
 
 bool Expect(const double actual, const double expect, const double epsilon = 1e-9) {
