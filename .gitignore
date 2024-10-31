@@ -1,6 +1,6 @@
 .idea
 cmake-build-debug
-CMakeLists.Txt
+CMakeLists.txt
 
 # Prerequisites
 *.d
@@ -35,3 +35,4 @@ CMakeLists.Txt
 *.out
 *.app
 cmake-build-debug/Testing/Temporary/LastTest.log
+*.log
